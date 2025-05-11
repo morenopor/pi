@@ -17,3 +17,13 @@ GPAG is a coding assistant designed to help write, fix, and explain code for pro
 - Understand how a program or command works on your system.
 
 - 🚀 Just ask Gema to help you code something, and it will guide you clearly and concisely.
+
+##   📁 Repository Structure
+
+This repository contains the following directories and scripts. **Note:** All Git commands should be executed from the root of the local repository (e.g., `~/my_github_repo/`). SSH keys are used for secure authentication with GitHub.
+
+-   **maintenance/**: This directory contains scripts for system maintenance tasks that can be automated with the help of the GPAG assistant.
+    -   `logrotate.sh`: Script for managing log rotation.
+    -   `Scheduled_update.sh`: Script for scheduling system updates.
+-   **hardening_tools/**: This directory contains scripts for system hardening, which can be used to implement security recommendations provided by the GPAG assistant.
+	-   `harden_services.sh`: Script for hardening system services.
