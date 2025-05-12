@@ -15,7 +15,7 @@ log "Iniciando proceso de actualización..."
 
 # Actualizar listas
 log "Actualizando listas de bloqueo Gravity..."
-pihole -g 2>&1 | tee -a $LOG_FILE
+sudo pihole -g 2>&1 | tee -a $LOG_FILE
 log "Actualización de listas de bloqueo Gravity completada."
 
 # Actualizar el sistema
@@ -38,7 +38,7 @@ sleep 60
 
 # Actualizar Pi-hole
 log "Actualizando Pi-hole..."
-pihole -up 2>&1 | tee -a $LOG_FILE
+sudo pihole -up 2>&1 | tee -a $LOG_FILE
 log "Actualización de Pi-hole completada."
 
 # --- Start: AIDE Database Update ---
